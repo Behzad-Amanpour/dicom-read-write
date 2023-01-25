@@ -8,7 +8,7 @@ from pydicom import dcmread
 import matplotlib.pyplot as plt
 import numpy as np  # You may or may not need numpy
 
-f = dcmread('An address on you computer or google drive\\Image.dcm')   # This file contains a "header" and a "image" 
+f = dcmread('An address on you computer or google drive\\Image.dcm')   # This file contains a "header" and an "image" 
 Im = f.pixel_array   # Exctracting the image from the file
 plt.imshow(Im,cmap='gray')   # Showing the image
 
