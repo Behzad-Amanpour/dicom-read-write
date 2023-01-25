@@ -12,10 +12,9 @@ f = dcmread('An address on you computer or google drive\\Image.dcm')   # This fi
 Im = f.pixel_array   # Exctracting the image from the file
 plt.imshow(Im,cmap='gray')   # Showing the image
 
-# Reading & Changing Header Info ======================== Behzad Amanpour ========================
-print (f)
-
-f.PatientName ='Patient^One'
+# Showing & Changing Header Info ======================== Behzad Amanpour ========================
+print(f)                      # this command prints the entire header info
+f.PatientName ='Patient^One'  # We want to change the patient name
 f.PatientID = '111111'
 f.ContentDate = '20191113'
 f.InstitutionName = 'hospital city'
@@ -27,5 +26,4 @@ f.StationName = 'GEHCGEHC'
 f.StudyDate = '20191113'   # there are much more info in the header
 
 # Writing a new DICOM file ============================== Behzad Amanpour ========================
-
 f.save_as("An address on you computer or google drive\\Image2.dcm")
