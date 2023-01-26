@@ -1,4 +1,4 @@
-## Rading, Changing Header, Showing Image, Writing A DICOM File ( Pydicom, Matplotlib, Numpy in Python)    
+## DICOM Reading, Writing, Changing Header, Showing Image ( Pydicom, Matplotlib, Numpy in Python)    
 
 In **code.py** you will see:
 
