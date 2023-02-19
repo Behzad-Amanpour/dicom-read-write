@@ -8,7 +8,7 @@ from pydicom import dcmread
 import matplotlib.pyplot as plt
 import numpy as np  # You may or may not need numpy
 
-f = dcmread('An address on you computer or google drive\\Image.dcm')   # This file contains a "header" and an "image" 
+f = dcmread('address on your drive\Image.dcm')   # This file contains a "header" and an "image" 
 Im = f.pixel_array   # Exctracting the image from the file
 plt.imshow(Im,cmap='gray')   # Showing the image
 
@@ -26,4 +26,4 @@ f.StationName = 'GEHCGEHC'
 f.StudyDate = '20191113'   # there are much more info in the header
 
 # Writing a new DICOM file ============================== Behzad Amanpour ========================
-f.save_as("An address on you computer or google drive\\Image2.dcm")
+f.save_as("address on your drive\Image2.dcm")
